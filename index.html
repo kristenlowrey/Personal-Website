@@ -50,6 +50,7 @@
       }
       img:hover {
         border: 20px solid white;
+        opacity: 1;
       }
       p {
         color: white;
@@ -103,15 +104,37 @@
         padding: 20px;
       }
       #summary {
-        background-color: rgb(231, 66, 129);
+        background-color: rgb(239, 100, 153);
         border-radius: 30px;
         margin-bottom: 30px;
         transition: 200ms ease-in-out;
         border: 1px solid rgb(231, 66, 129);
       }
       #summary:hover {
-        background-color: rgb(239, 100, 153);
+        background-color: rgb(231, 66, 129);
         border: 1px solid rgb(231, 66, 129);
+      }
+      #welcome {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      #info {
+        font-weight: 500;
+      }
+      #info, #email-address {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      #email-link {
+        text-decoration: none;
+        color: white;
+        transition: 200ms ease-in-out ;
+      }
+      #email-link:hover {
+        color: rgb(249, 193, 214);
       }
       #email-button {
         color: rgb(231, 66, 129);
@@ -147,16 +170,15 @@
           /></a>
         </div>
         <div class="col-6" id="summary">
-          <p>
-            Welcome to my website! <br />
+          <p><span id="welcome"><strong>
+            Welcome to my website!</strong></span>
             My name is Kristen Lowrey, and I am an <strong>artist</strong>,
             <strong>educator</strong> and
             <strong>freelance designer</strong> based in Houston, TX. I am
             available for website design, portraiture, graphic design, and other
-            commercial or personal services. <br /><br />
-            For more information, please inquire at
-            <strong>kristenlowrey@gmail.com</strong>
-            <br />
+            commercial or personal services. <br /><div id="info">
+            For more information, please inquire at</div> <div id="email-address">
+            <strong><a href="mailto:kristenlowrey@gmail.com" id="email-link">kristenlowrey@gmail.com</a></strong></div>
           </p>
         </div>
       </div>
